@@ -6,6 +6,7 @@ include('utils/connect.php');
 if (!isset($_POST['submit']))
 	exit('Illegal call to this page.');
 
+
 $username = $_POST['username'];
 $username = addslashes($username);
 $password = MD5($_POST['password']);
